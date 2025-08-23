@@ -26,6 +26,11 @@ body {
 
 .hamburger {
     display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 .nav {
@@ -42,7 +47,6 @@ body {
 }
 
 .nav-list {
-    display: flex;
     align-items: center;
     list-style: none;
     margin-right: 28px;
@@ -125,11 +129,14 @@ body {
 }
 
 /*Responsivo para celular*/
-
-
 @media screen and (max-width: 412px) {
     .hamburger {
         display: block;
+        font-size: 26px;
+        background: none;
+        border: none;
+        color: white;
+        
         /* aparece só no mobile */
     }
 
@@ -140,29 +147,21 @@ body {
     }
 
     .nav-list {
-        display: none;
-        /* escondido por padrão */
+         display: none; /* escondido inicialmente */
         flex-direction: column;
         position: absolute;
         top: 60px;
-        /* altura da navbar */
         right: 20px;
         background: #111;
         padding: 10px;
         border-radius: 8px;
+        width: 150px;
+        z-index: 999;
     }
 
-.nav-list.active {
-    display: flex; /* aparece quando clicado */
-  }
-
-    .hamburger {
-        display: none;
-        font-size: 26px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
+    .nav-list.active {
+        display: flex;
+        /* aparece quando clicado */
     }
 
     #titulo {
@@ -195,15 +194,31 @@ body {
         margin-bottom: 35px;
     }
 
-    .projetos {
-        cursor: pointer;
-        background-color: white;
-        border: 0;
-        padding: 14px;
-        border-radius: 5px;
-        font-size: 18px;
-        font-weight: bold;
-        transition: 0.3s;
+    .about {
+        flex-direction: left;
+        /* empilha */
+        text-align: left;
+        padding: 40px 20px;
+    }
+
+    .about div {
+        max-width: 100%;
+        padding-right: 0 10px;
+    }
+
+
+    .about img {
+        display: none;
+        /* exibe imagem se quiser */
+    }
+
+    .about div h1 {
+        font-size: 32px;
+        margin-bottom: 14px;
+    }
+
+    .techs {
+        margin-top: 40px;
     }
 
 
