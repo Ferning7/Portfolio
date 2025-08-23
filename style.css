@@ -110,23 +110,26 @@ body {
 
 /*Responsivo para celular*/
 @media screen and (max-width: 412px) {
-   .nav {
-        flex-wrap: wrap; /* permite quebrar para a linha de baixo se não couber */
-        justify-content: center; /* mantém centralizado */
-        gap: 10px; /* reduz espaço entre itens */
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .nav-list {
-        gap: 10px; /* diminui espaçamento no mobile */
+        display: flex;
+        justify-content: center; 
+        gap: 20px;
+        width: 100%;
+        padding: 0;   
+        margin: 0;    
+        list-style: none;
     }
 
     #titulo {
-        margin: 0; /* remove qualquer margem extra */
-    }
-
-    .nav-list a {
-              justify-content: center; /* mantém centralizado */
-
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
     }
 
     .main {
@@ -141,12 +144,12 @@ body {
 
     .main h1 {
         color: white;
-        font-size: 30px;
+        font-size: 35px;
 
     }
 
     .main p {
-        font-size: 20px;
+        font-size: 22px;
         font-style: italic;
         color: #8ac8ff;
         margin-top: 10px;
