@@ -56,7 +56,7 @@ body {
     width: 100%;
     background-color: #000;
     height: calc(100vh - 80px);
-    background-image: url("imagens/banne\ portfolio.png");
+    background-image: url("imagens/banne\ portfolio\ -1920.pngng");
     display: flex;
     align-items: center;
     padding-left: 10%;
@@ -95,6 +95,30 @@ body {
     color: #181818;
 }
 
+/*Responsivo para monitor menor/notebooks */
+@media screen and (max-width: 1366px) {
+    .main {
+    width: 100%;
+    background-color: #000;
+    height: calc(100vh - 80px);
+    background-image: url("imagens/banne\ portfolio\ 1366.png");
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+/*Responsivo para mobile */
+@media screen and (max-width: 412px) {
+    .main {
+    width: 100%;
+    background-color: #000;
+    height: calc(80vh - 80px);
+    background-image: url("imagens/banne\ portfolio\ mobile.png");
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+} 
 /* FIM DA MAIN */
 
 /* ESTILIZANDO O SOBRE */
