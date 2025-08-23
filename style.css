@@ -13,7 +13,7 @@ body {
 
 /* ESTILIZANDO O HEADER */
 
-#titulo{
+#titulo {
     color: #1E96FC;
     font-weight: bold;
     align-items: center;
@@ -75,7 +75,7 @@ body {
     margin-bottom: 35px;
 }
 
-.projetos{
+.projetos {
     cursor: pointer;
     background-color: white;
     border: 0;
@@ -86,43 +86,91 @@ body {
     transition: 0.3s;
 }
 
-.projetos:hover{
-    transform: scale(1.1);   
+.projetos:hover {
+    transform: scale(1.1);
 }
 
-.main a{
+.main a {
     text-decoration: none;
     color: #181818;
 }
 
-/*Responsivo para monitor menor/notebooks */
+/*Responsivo para monitor menor e notebooks*/
 @media screen and (max-width: 1366px) {
     .main {
-    width: 100%;
-    background-color: #000;
-    height: calc(100vh - 80px);
-    background-image: url("imagens/banne\ portfolio\ 1366.png");
-    display: flex;
-    align-items: center;
-    padding-left: 10%;
+        width: 100%;
+        background-color: #000;
+        height: calc(100vh - 80px);
+        background-image: url("imagens/banne\ portfolio\ 1366.png");
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+    }
 }
 
-/*Responsivo para mobile */
+/*Responsivo para celular*/
 @media screen and (max-width: 412px) {
+   .nav {
+        flex-wrap: wrap; /* permite quebrar para a linha de baixo se não couber */
+        justify-content: center; /* mantém centralizado */
+        gap: 10px; /* reduz espaço entre itens */
+    }
+
+    .nav-list {
+        gap: 10px; /* diminui espaçamento no mobile */
+    }
+
+    #titulo {
+        margin: 0; /* remove qualquer margem extra */
+    }
+
+    .nav-list a {
+              justify-content: center; /* mantém centralizado */
+
+    }
+
     .main {
-    width: 100%;
-    background-color: #000;
-    height: calc(80vh - 80px);
-    background-image: url("imagens/banne\ portfolio\ mobile.png");
-    display: flex;
-    align-items: center;
-    padding-left: 10%;
+        width: 100%;
+        background-color: #000;
+        height: calc(80vh - 80px);
+        background-image: url("imagens/banne\ portfolio\ mobile.png");
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+    }
+
+    .main h1 {
+        color: white;
+        font-size: 30px;
+
+    }
+
+    .main p {
+        font-size: 20px;
+        font-style: italic;
+        color: #8ac8ff;
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+
+    .projetos {
+        cursor: pointer;
+        background-color: white;
+        border: 0;
+        padding: 14px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+
 }
-} 
+
 /* FIM DA MAIN */
 
 /* ESTILIZANDO O SOBRE */
-.about{
+.about {
     background-color: #000216;
     width: 100%;
     padding: 80px 10%;
@@ -133,28 +181,29 @@ body {
     color: #ffffff;
 }
 
-.about div{
+.about div {
     max-width: 50%;
     padding-right: 40px;
 }
 
-.about p{
+.about p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.about img{
+.about img {
     max-width: 450px;
     border-radius: 8px;
 }
 
-.about div h1{
+.about div h1 {
     font-size: 32px;
     margin-bottom: 14px;
 }
 
-.techs{
+.techs {
     margin-top: 40px;
 }
+
 /* FIM DO SOBRE */
 
 /* ESTILIZANDO OS PROJETOS */
@@ -162,7 +211,7 @@ body {
 
 
 
-.projects{
+.projects {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -172,18 +221,18 @@ body {
     font-size: larger;
 }
 
-.projects h1{
+.projects h1 {
     font-size: 32px;
     margin-bottom: 8px;
     margin-top: 20px;
 }
 
-.projects p{
+.projects p {
     margin-bottom: 40px;
     font-style: italic;
 }
 
-.project-list{
+.project-list {
     width: 100%;
     margin-bottom: 8px;
     display: flex;
@@ -191,13 +240,13 @@ body {
     align-items: center;
 }
 
-.project-list a img{
+.project-list a img {
     width: 100%;
     display: block;
 }
 
 .project-list a,
-.projects img{
+.projects img {
     width: 22%;
     margin-left: 0.5%;
     margin-left: 0.5%;
@@ -205,7 +254,7 @@ body {
     transition: 0.9s;
 }
 
-.projects img:hover{
+.projects img:hover {
     opacity: 2;
 }
 
@@ -274,7 +323,7 @@ body {
     background: #333;
 }
 
-.action{
+.action {
     background-color: #181818;
     border: 0;
     padding: 12px 28px;
@@ -289,7 +338,7 @@ body {
 
 /* FOOTER */
 
-footer{
+footer {
     width: 100%;
     background-color: #181818;
     padding: 70px 0;
@@ -299,13 +348,13 @@ footer{
     color: #FFF;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #FFF;
 }
 
-footer p{
-    margin-left:  12px;
+footer p {
+    margin-left: 12px;
 }
 
 /* fim footer  */
