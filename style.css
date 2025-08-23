@@ -13,12 +13,23 @@ body {
 
 /* ESTILIZANDO O HEADER */
 
+#titulo{
+    color: #1E96FC;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 28px;
+}
+
 .nav {
     background-color: #181818;
     height: 80px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .nav-list {
@@ -45,7 +56,7 @@ body {
     width: 100%;
     background-color: #000;
     height: calc(100vh - 80px);
-    background-image: url("imagens/programador.png");
+    background-image: url("imagens/banne\ portfolio.png");
     display: flex;
     align-items: center;
     padding-left: 10%;
@@ -64,7 +75,7 @@ body {
     margin-bottom: 35px;
 }
 
-.call-to-action {
+.projetos{
     cursor: pointer;
     background-color: white;
     border: 0;
@@ -75,7 +86,7 @@ body {
     transition: 0.3s;
 }
 
-.call-to-action:hover{
+.projetos:hover{
     transform: scale(1.1);   
 }
 
@@ -88,12 +99,14 @@ body {
 
 /* ESTILIZANDO O SOBRE */
 .about{
-    background-color: #fff;
+    background-color: #000216;
     width: 100%;
     padding: 80px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: large;
+    color: #ffffff;
 }
 
 .about div{
@@ -101,18 +114,29 @@ body {
     padding-right: 40px;
 }
 
+.about p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .about img{
     max-width: 450px;
     border-radius: 8px;
 }
 
-.about div h2{
+.about div h1{
     font-size: 32px;
     margin-bottom: 14px;
+}
+
+.techs{
+    margin-top: 40px;
 }
 /* FIM DO SOBRE */
 
 /* ESTILIZANDO OS PROJETOS */
+
+
+
 
 .projects{
     width: 100%;
@@ -121,9 +145,10 @@ body {
     align-items: center;
     justify-content: center;
     padding: 80px 0;
+    font-size: larger;
 }
 
-.projects h2{
+.projects h1{
     font-size: 32px;
     margin-bottom: 8px;
     margin-top: 20px;
@@ -142,6 +167,12 @@ body {
     align-items: center;
 }
 
+.project-list a img{
+    width: 100%;
+    display: block;
+}
+
+.project-list a,
 .projects img{
     width: 22%;
     margin-left: 0.5%;
@@ -151,7 +182,72 @@ body {
 }
 
 .projects img:hover{
-    opacity: 1;
+    opacity: 2;
+}
+
+/* Grade de cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+/* Estilo dos cards */
+.project-card {
+    background: #1d3750;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Imagem */
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Título */
+.project-card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #181818;
+}
+
+/* Descrição */
+.project-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 15px 20px;
+}
+
+/* Botão */
+.project-card .btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background: #181818;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background: #333;
 }
 
 .action{

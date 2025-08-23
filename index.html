@@ -9,8 +9,11 @@
 </head>
 
 <body>
+    
     <nav class="nav">
+        <p id="titulo">Matheus Fernandes - Portfólio </p>
         <ul class="nav-list">
+            
             <li><a href="#Home">Home</a></li>
             <li><a href="#Sobre">Sobre</a></li>
             <li><a href="#Projeto">Projeto</a></li>
@@ -19,11 +22,11 @@
 
     <section class="main">
         <div>
-            <h1 id="Home">Olá, <br> Seja bem-vindo(a)</h1>
-            <p>Crie soluções para seu negócio</p>
-            <a href="#">
-                <button class="call-to-action">
-                    Veja meus projetos 👇🏿
+            <h1 id="Home">Olá, <br> Seja bem-vindo(a) ao meu Portfólio</h1>
+            <p>Aqui vou destacar alguns dos meus projetos que mais gosto</p>
+            <a href="#Projeto">
+                <button class="projetos">
+                    Ver projetos
                 </button>
             </a>
         </div>
@@ -31,35 +34,65 @@
 
     <section class="about">
         <div>
-            <h2 id="Sobre">Sobre</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas totam magni placeat illo, exercitationem
-                voluptate sunt minima, provident at consectetur voluptates maiores consequuntur.</p>
+            <h1 id="Sobre">Sobre</h1>
+            <p>Comecei na área da programação em Março/2024 com um curso de Técnico em Desenvolvimento de Sistemas.
+                nele aprendi tudo que sei hoje, desde documentações à programação back-end e desenvolvimento de Aplicações
+                Desktop
+            </p>
             <br> <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas totam magni placeat illo, exercitationem
-                voluptate sunt minima, provident at consectetur voluptates maiores consequuntur.</p>
+            <p>Também atualmente realizando meu curso de Assistente de Programação Web como jovem aprendiz pela Stellantis que iniciei em Novembro/2024, no qual curso que
+                aprendi a programação front-end
+            </p>
+
+            <h2 class="techs"> Tecnologias </h2>
+             <div>
+                    <ul>
+                        <li>C#</li>
+                        <li>Git</li>
+                        <li>HTML</li>
+                    </ul>
+             </div>   
+
         </div>
         <img src="imagens/foto-pc.png" alt="ronildo">
     </section>
 
     <section class="projects">
-        <h2 id="Projeto">Meus Projetos</h2>
-        <p>Conheço meus últimos projetos </p>
-        <div class="project-list">
-            <img src="imagens/projeto1.png" alt="">
-            <img src="imagens/projeto2.png" alt="">
-            <img src="imagens/projeto3.png" alt="">
+    <h2 id="Projeto">Meus Projetos</h2>
+    <p>Conheça meus últimos projetos </p>
+    <p>clique para acessar</p>
+
+    <div class="project-grid">
+        <!-- Card 1 -->
+        <div class="project-card">
+            <img src="imagens/Capa.jpg" alt="Zaffy Anúncios">
+            <h3>Zaffy Anúncios</h3>
+            <p>Sistema C2C para anúncios desenvolvido como TCC no SENAI.</p>
+            <a href="https://github.com/Robertinhou/Zaffy-Projeto" target="_blank" class="btn">Acessar Projeto</a>
         </div>
 
-        <div class="project-list">
-            <img src="imagens/projeto3.png" alt="">
-            <img src="imagens/projeto2.png" alt="">
-            <img src="imagens/projeto1.png" alt="">
+        <!-- Card 2 -->
+        <div class="project-card">
+            <img src="imagens/projeto2.png" alt="Pokedex">
+            <h3>Pokedex</h3>
+            <p>Aplicativo que consome a API de Pokémon e exibe informações detalhadas.</p>
+            <a href="https://github.com/Ferning7/Pokedex" target="_blank" class="btn">Acessar Projeto</a>
         </div>
 
-        <button class="action">
-            Faça um orçamento
-        </button>
-    </section>
+        <!-- Card 3 -->
+        <div class="project-card">
+            <img src="imagens/projeto3.png" alt="Timer JS">
+            <h3>Timer JS</h3>
+            <p>Contador regressivo com efeito de confetes ao término.</p>
+            <a href="https://github.com/Ferning7/timer-js" target="_blank" class="btn">Acessar Projeto</a>
+        </div>
+    </div>
+
+    <button class="action">
+        Faça um orçamento
+    </button>
+</section>
+
 
     <footer>
         <h3><a href="#"> Matheus Fernandes Corrêa</a></h3>
