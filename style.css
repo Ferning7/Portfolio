@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -21,6 +22,10 @@ body {
     font-weight: bold;
     align-items: center;
     margin-left: 28px;
+}
+
+.hamburger {
+    display: none;
 }
 
 .nav {
@@ -60,7 +65,7 @@ body {
     width: 100%;
     background-color: #000;
     height: calc(100vh - 80px);
-    background-image: url("imagens/banne\ portfolio\ -1920.pngng");
+    background-image: url("imagens/banne\ portfolio\ -1920.png");
     display: flex;
     align-items: center;
     padding-left: 10%;
@@ -112,8 +117,22 @@ body {
     }
 }
 
+@media screen and (max-width: 1560px) {
+    .main {
+        background-image: url("imagens/banne\ portfolio\ 1530.png");
+
+    }
+}
+
 /*Responsivo para celular*/
+
+
 @media screen and (max-width: 412px) {
+    .hamburger {
+        display: block;
+        /* aparece só no mobile */
+    }
+
     .nav {
         flex-wrap: wrap;
         justify-content: center;
@@ -121,13 +140,29 @@ body {
     }
 
     .nav-list {
-        display: flex;
-        justify-content: center; 
-        gap: 20px;
-        width: 100%;
-        padding: 0;   
-        margin: 0;    
-        list-style: none;
+        display: none;
+        /* escondido por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* altura da navbar */
+        right: 20px;
+        background: #111;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+.nav-list.active {
+    display: flex; /* aparece quando clicado */
+  }
+
+    .hamburger {
+        display: none;
+        font-size: 26px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
     }
 
     #titulo {
