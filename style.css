@@ -50,6 +50,7 @@ body {
     align-items: center;
     list-style: none;
     margin-right: 28px;
+    display: flex;
 }
 
 .nav-list a {
@@ -147,7 +148,7 @@ body {
     }
 
     .nav-list {
-         display: none; /* escondido inicialmente */
+        display: none; /* escondido inicialmente */
         flex-direction: column;
         position: absolute;
         top: 60px;
